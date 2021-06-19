@@ -13,3 +13,5 @@ for (let i = 0; i < arr.length; i++) {
 }
 
 sum = largest + secondLargest;
+
+console.log("sum ", sum);

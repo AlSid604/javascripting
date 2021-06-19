@@ -1,17 +1,11 @@
-const multiplicationTable = function (maxValue) {
-  var output = "";
-  for (i = 1; i <= maxValue; i++) {
-    for (d = 1; d <= maxValue; d++) {
-      output += d * i;
-    }
-    if (d < maxValue) {
-      output += " ";
-    }
-    output += "\n";
+const merge = function (arrays) {
+  var mergedArray = [];
+  for (i = 0; i < arrays.length; i++) {
+    return (mergedArray += arrays[i]);
   }
-  return output;
+  return mergedArray;
 };
 
-console.log(multiplicationTable(1));
-console.log(multiplicationTable(5));
-console.log(multiplicationTable(10));
+console.log(merge([4, 5, 6], [1, 2, 3, 4]), "=?", [1, 2, 3, 4, 4, 5, 6]);
+
+const arrays = [
